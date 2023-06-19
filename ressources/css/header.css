@@ -1,0 +1,96 @@
+@font-face{
+    font-family: rajdhani;
+    src: url("../font/Rajdhani.ttf");
+}
+@font-face {
+    font-family: Grotesk;
+    src: url('../font/SpaceGrotesk.ttf');
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    padding:0;
+    color:white;
+    background-color: #000;
+    font-family: Grotesk;
+    overflow-x: hidden;
+
+}
+
+header#header{
+    height: 900px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.nav-bar{
+    margin: 0 8%;
+    padding: 0 60px 0 60px;
+    height: 15%;
+    border-bottom: 3.5px #c8c6ca30 solid ;
+    border-left: 3.5px #c8c6ca30 solid ;
+    border-right: 3.5px #c8c6ca30 solid ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-bar a img{
+    height:40px;
+}
+.nav-bar a img:hover{
+   filter: brightness(0) saturate(100%) invert(88%) sepia(100%) saturate(1300%) hue-rotate(357deg);
+}
+.nav-menu{
+    display:flex;
+    gap: 30px;
+    justify-content: space-between;
+}
+.nav-item{  
+    padding:0 2px;
+    height: 32px;
+    font-size: 28px;
+    list-style-type: none;
+    transition:all 0.5s ease-in-out;
+
+}
+.nav-item::after{
+    content: "";
+    margin: 0 auto;
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: #fff;
+    border-radius: 20px;
+    transition: all 0.5s ease-in-out;
+}
+.nav-item:hover::after{
+    width: 100%;
+}
+.nav-item.active {
+    color: #fff;
+}
+.nav-item.active::after{
+    width: 100%;
+}
+.nav-item a{
+    color:white;
+    font-family: rajdhani;
+    font-weight: 600;
+    text-decoration:none;
+    letter-spacing: 1px;
+}
+
+.nav-item.active a{
+    color: #fff;
+}
+
+article.welcome-banner{
+    margin:0 8%;
+    /* height: 100%; */
+    height:84.7%;
+    border-left: 3.5px #c8c6ca30 solid ;
+    border-right: 3.5px #c8c6ca30 solid ;
+    display:flex;
+  
+}

@@ -1,0 +1,48 @@
+
+footer{
+    margin: 0 8%;
+     padding:50px 0 130px 0;
+     border-left: 3.5px #c8c6ca30 solid ;
+     border-right: 3.5px #c8c6ca30 solid ;
+ text-align: center;    
+}
+footer p{
+ font-size: 10px;
+ margin: 0 0 40px 0;
+}
+footer p:first-child img{
+ transform: translate(-8px,8px);
+}
+footer .groupe-logo{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ gap:2%;
+}
+
+footer .groupe-logo img:hover{
+filter: brightness(0) saturate(100%) invert(88%) sepia(100%) saturate(1300%) hue-rotate(357deg);
+}
+
+@media only screen and (max-width: 900px) and (min-width:350px){
+    footer{
+        margin: 0 4%;
+    }
+    footer p{
+    font-size: 8px;
+    margin: 0 0 40px 0;
+    }
+    footer p:first-child img{
+    transform: translate(-8px,8px);
+    }
+    footer .groupe-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:2%;
+    }
+
+    footer .groupe-logo img:hover{
+    filter: brightness(0) saturate(100%) invert(88%) sepia(100%) saturate(1300%) hue-rotate(357deg);
+    }
+}

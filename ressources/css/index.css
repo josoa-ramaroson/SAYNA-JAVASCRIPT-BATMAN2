@@ -1,87 +1,14 @@
-@font-face{
-    font-family: rajdhani;
-    src: url("../font/Rajdhani.ttf");
-}
-@font-face {
-    font-family: Grotesk;
-    src: url('../font/SpaceGrotesk.ttf');
-}
+
 *{
     padding:0;
     margin:0  ;
 }
-html{
-    scroll-behavior: smooth;
-}
-body{
-    padding:0;
-    color:white;
-    background-color: #000;
-    font-family: Grotesk;
-    overflow-x: hidden;
-
-}
 
 header#header{
-    height: 900px;
     background-image: url("../image/illustrations/Bathome1.png");
-    background-size: 100%;
-    background-repeat: no-repeat;
-}
-
-.nav-bar{
-    margin: 0 8%;
-    padding: 0 60px 0 60px;
-    height: 15%;
-    border-bottom: 3.5px #c8c6ca30 solid ;
-    border-left: 3.5px #c8c6ca30 solid ;
-    border-right: 3.5px #c8c6ca30 solid ;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.nav-bar a img{
-    height:40px;
-}
-.nav-bar a img:hover{
-   filter: brightness(0) saturate(100%) invert(88%) sepia(100%) saturate(1300%) hue-rotate(357deg);
-}
-.nav-menu{
-    display:flex;
-}
-.nav-item{  
-    padding:0 2px;
-    height: 32px;
-    font-size: 28px;
-    list-style-type: none;
-    transition:all 0.5s;
-
-}
-.nav-item a{
-    color:white;
-    font-family: rajdhani;
-    font-weight: 600;
-    text-decoration:none;
-    letter-spacing: 1px;
-}
-.nav-item:hover{
-    border-bottom: solid #fff 2px;
-}
-.nav-item.active {
-    color: #fff;
-    border-bottom: solid #fff 2px;
-}
-.nav-item.active a{
-    color: #fff;
 }
 
 article.welcome-banner{
-    margin:0 8%;
-    /* height: 100%; */
-    height:84.7%;
-    border-left: 3.5px #c8c6ca30 solid ;
-    border-right: 3.5px #c8c6ca30 solid ;
-    display:flex;
     flex-direction: column;
     justify-content: center;
     gap: 70px;
@@ -119,20 +46,6 @@ article.welcome-banner{
     background-image: linear-gradient(to right,#eddebfbc 25%,#890009b2 70%);
 }
 
-#sticky-section{
-    position: fixed;
-    top:50vh;
-    right:4.5%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap:24px;
-    z-index:100;
-}
-#sticky-section a:hover img{
-   filter: brightness(0) saturate(100%) invert(88%) sepia(100%) saturate(1300%) hue-rotate(357deg);
-}
 article#batman-cinema,article#multimedia,article#citation-slider{
     margin: 0 8%;
     padding:50px 100px 180px 100px;
@@ -438,30 +351,6 @@ article#citation-slider section#bouton-slider .point-next:hover,article#citation
     background-color: #19587D;
     border:solid #19587D 1px;
     border-radius:100px;
-}
-footer{
-       margin: 0 8%;
-        padding:50px 0 130px 0;
-        border-left: 3.5px #c8c6ca30 solid ;
-        border-right: 3.5px #c8c6ca30 solid ;
-    text-align: center;    
-}
-footer p{
-    font-size: 10px;
-    margin: 0 0 40px 0;
-}
-footer p:first-child img{
-    transform: translate(-8px,8px);
-}
-footer .groupe-logo{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap:2%;
-}
-
-footer .groupe-logo img:hover{
-   filter: brightness(0) saturate(100%) invert(88%) sepia(100%) saturate(1300%) hue-rotate(357deg);
 }
 
 
@@ -973,24 +862,5 @@ article#citation-slider img#guillemet-2{
     right:15%;
 }
 
-footer{
-       margin: 0 4%;
-}
-footer p{
-    font-size: 8px;
-    margin: 0 0 40px 0;
-}
-footer p:first-child img{
-    transform: translate(-8px,8px);
-}
-footer .groupe-logo{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap:2%;
-}
 
-footer .groupe-logo img:hover{
-   filter: brightness(0) saturate(100%) invert(88%) sepia(100%) saturate(1300%) hue-rotate(357deg);
-}
 }
