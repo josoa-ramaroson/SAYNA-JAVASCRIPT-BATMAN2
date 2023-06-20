@@ -1,3 +1,82 @@
 article.welcome-banner.before-seen div.text-from-left{
  transform: translate(-200%,-5%);
 }
+article h2,
+#fleche-down,
+article#multimedia section#bande-annonce,
+article#formulaire-contact,
+article#citation-slider
+{
+    transition: all 1s ease-in-out;   
+}
+#fleche-down.before-seen{
+    transform: translateY(-4%);
+    opacity: 0;
+}
+article.before-seen h2,article#nemesis.before-seen h2{
+    transform: translateX(-100%);
+}
+article#batman-cinema p,
+article#nemesis p,
+article#justice-league p,
+article#multimedia section#multimedia-slider,
+footer div:nth-child(1){
+    transition: all 1s ease-in-out;
+    transition-delay: 1s;
+}
+article#batman-cinema p.before-seen{
+    opacity: 0;
+    transform: translateX(20%);
+}
+article section#batman-cinema-image,
+article#justice-league section#slide-justice-league{
+    transition: all 1s ease-in-out;
+    transition-delay: 1.5s;
+
+}
+article section#batman-cinema-image.before-seen,
+article#justice-league p.before-seen, article#nemesis p.before-seen{
+    opacity: 0;
+}
+
+
+article#justice-league p.before-seen{
+    transform: translateY(10%);
+}
+article#justice-league section#slide-justice-league.before-seen{
+    opacity: 0;
+}
+#bat-truc {
+    transition: all 1s ease-in-out;
+    transition-delay: 1s;
+}
+#bat-truc.before-seen{
+    transform: skew(30deg,30deg);
+    opacity: 0;
+}
+#bat-droite{
+    transition: all 2s ease-in-out;
+    transition-delay: 2s;
+}
+#bat-droite.before-seen{
+    opacity:0;
+    transform: rotateY(720deg) ;
+}
+article#multimedia section#multimedia-slider.before-seen,
+article#formulaire-contact.before-seen{
+    opacity: 0;
+    transform: translateY(10%);
+}
+article#multimedia section#bande-annonce.before-seen,
+article#citation-slider.before-seen,
+footer div:nth-child(1).before-seen
+{
+    opacity: 0;
+}
+
+article#citation-slider.before-seen{
+    transform: translateY(-20%);
+}
+footer div:nth-child(1).before-seen{
+    transform: translateY(20%);
+}

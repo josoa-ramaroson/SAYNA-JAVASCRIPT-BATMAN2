@@ -2,7 +2,7 @@
 #sticky-section{
     position: fixed;
     top:50vh;
-    right:4.5%;
+    right:5.3%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -12,4 +12,14 @@
 }
 #sticky-section a:hover img{
    filter: brightness(0) saturate(100%) invert(88%) sepia(100%) saturate(1300%) hue-rotate(357deg);
+}
+#sticky-section a img{
+    height:50px;
+}
+#sticky-section a img.social-sticky{
+    height:25px;
+}
+
+#sticky-section a img.social-sticky{
+    height:25px;
 }
