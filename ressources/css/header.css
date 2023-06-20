@@ -19,7 +19,7 @@ body{
 }
 
 header#header{
-    height: 900px;
+    height: 1000px;
     background-size: 100%;
     background-repeat: no-repeat;
 }
@@ -91,6 +91,6 @@ article.welcome-banner{
     height:84.7%;
     border-left: 3.5px #c8c6ca30 solid ;
     border-right: 3.5px #c8c6ca30 solid ;
-    display:flex;
+  
   
 }

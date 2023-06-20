@@ -9,11 +9,24 @@ header#header{
 }
 
 article.welcome-banner{
+    height:84%;
+    display: flex;
+    
     flex-direction: column;
     justify-content: center;
     gap: 70px;
     align-items: center;
 }
+article.welcome-banner div.text-from-left{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 70px;
+    align-items: center;
+    transition: all 1s ease-in-out;
+}
+
 .intro-text{
     max-width: 800px;
     font-size:23px;
@@ -93,22 +106,23 @@ article#batman-cinema p, article#nemesis p{
     width:100%;
 }
 article#nemesis{
+    position: relative;
     margin: 0 8%;
     padding:30px 100px 180px 100px;
     border-left: 3.5px #c8c6ca30 solid ;
     border-right: 3.5px #c8c6ca30 solid ;
 }
-article#nemesis h2 #bat-truc{
+article#nemesis  #bat-truc{
     height:120px; 
     position:absolute;
-    top:-60px;
-    left:100px;
+    top:-30px;
+    left:200px;
 }
-article#nemesis h2 #bat-droite{
-    height:300px; 
+article#nemesis  #bat-droite{
+    height:400px; 
     position:absolute;
-    top:-250px;
-    right:-208px;
+    top:-300px;
+    right:-120px;
 }
 article#justice-league{
     margin: 0 8%;
