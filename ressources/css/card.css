@@ -1,0 +1,52 @@
+figure.bat-image{
+    position: relative;
+    overflow: hidden;
+    border: solid 4px #ffffff32 ;
+    box-sizing: content-box;
+}
+figure.bat-image figcaption{
+    position: absolute;
+    margin: 0;
+    width:98.5%;
+    height: 150px;
+    border: solid 3px #ffffff50;
+    display: flex;
+    background-color: #c3a8712a;
+    transition: all 0.5s ease-in-out;
+}
+figure.bat-image.hover figcaption{
+    transform: translateY(-112%);
+}
+figure.bat-image > img:nth-child(1){
+    transform: scale(1.04);
+    transition: all 0.5s ease-in;
+}
+figure.bat-image.hover >img:nth-child(1){
+    transform: scale(1.14);
+
+}
+figure.bat-image figcaption div.card-figcaption{
+    margin: auto;
+    padding: 2% 5% ;
+    width:75%;
+    height: 60px;
+    font-size: 12px;
+    position: relative;
+    background-image: linear-gradient(to right,#eddebf68 30%,#89000948 70%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 200px;
+}
+figure.bat-image figcaption div.card-figcaption img{
+    position: absolute;
+    width:75px;
+    top:0;
+    left: 0;
+    transform: translate(-31%,-10%);
+}
+figure.bat-image figcaption div.card-figcaption span{
+    font-size: 11px;
+    color: #dfc352cd;
+}

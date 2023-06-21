@@ -93,7 +93,7 @@ article#batman-cinema p, article#nemesis p{
     text-align: center;
 }
 .bat-image{
-    max-width: 34%;
+    max-width: 36%;
     transition: all ease-in-out 0.3s;
 }
 .bat-image:hover{
@@ -101,6 +101,7 @@ article#batman-cinema p, article#nemesis p{
 }
 .bat-image img{
     width:100%;
+  
 }
 article#nemesis{
     position: relative;
@@ -122,7 +123,7 @@ article#nemesis  #bat-droite{
     right:-120px;
 }
 article#justice-league{
-    margin: 0 8%;
+    margin: 8% 8%;
     padding:50px 70px 180px 130px;
     height:750px;
     border-left: 3.5px #c8c6ca30 solid ;
@@ -138,11 +139,24 @@ article#justice-league p{
     box-sizing: border-box;
     max-width: 90%;
 }
-article#justice-league img{
-    position:absolute;
-    width:125%;
-    left:-16%;
-    z-index:-1;
+
+
+article#justice-league section#slide-justice-league{
+    position: absolute;
+    left:-10%;
+    width: 120%;
+    height: 700px;
+   
+}
+article#justice-league section#slide-justice-league img{
+    position: absolute;
+    width:100%;
+    height: 700px;
+    transition: all 2s ease;
+    opacity: 0;
+}
+article#justice-league section#slide-justice-league img.active{
+    opacity: 1;
 }
 article#multimedia{
     padding-top: 100px;
@@ -724,22 +738,8 @@ article#nemesis h2 #bat-droite{
     top:-150px;
     right:-70px;
 }
-article#justice-league{
-    padding:50px 50px 180px 50px;
-    height:500px;
-    position:relative;
-    z-index:-2;
-}
 
-article#justice-league section#slide-justice-league{
-    position:absolute;
-    width:125%;
-    left:-16%;
-    z-index:-1;
-}
-article#justice-league img{
-    width:100%;
-}
+
 article#multimedia{
     padding:100px 2% 100px 2%;
     position:relative;

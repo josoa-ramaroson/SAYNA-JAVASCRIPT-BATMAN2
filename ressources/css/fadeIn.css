@@ -77,6 +77,9 @@ footer div:nth-child(1).before-seen
 article#citation-slider.before-seen{
     transform: translateY(-20%);
 }
+footer div:nth-child(1){
+    transition-delay: 1.5s;
+}
 footer div:nth-child(1).before-seen{
     transform: translateY(20%);
 }
