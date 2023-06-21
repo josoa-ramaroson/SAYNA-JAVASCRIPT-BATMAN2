@@ -30,7 +30,7 @@
 
     <article class="welcome-banner">
             <!--Les textes sur la page HOME-->
-          <h1></h1>
+          <h1>LET’S PLAY A<br/> LITTLE GAME</h1>
            <section id="fleche-down">
                <a href="#batman-game">
                    <img src="../image/logos/flèche_down_header.png" alt="vers le bas" height="30">
@@ -38,8 +38,6 @@
            </section>
     </article>
     <!--flèche vers le bas-->
-
-   
 
 </header>
        
@@ -68,7 +66,32 @@
 
         <!--ARTICLE DE BATMAN GAME-->
         <article id="batman-game">
-          
+          <h2>CONNAISSEZ VOUS BIEN LE CHEVALIER NOIR?</h2>
+          <section id="enigmes">
+                <!-- <img src="../image/illustrations/Batgame_2.png" alt=""> -->
+                <div class="enigme">
+                    <img src="../image/illustrations/Batgame_3.png" alt="L'homme mystère">
+                    <article class="question-reponse">
+                        <h3>Quel est l'autre nom de l'Homme-Mystère?</h3>
+                        <div class="reponses">
+                            <div class="reponse">
+                                <input type="checkbox" name="homme-mystere" id="sphinx">
+                                <label for="sphinx">Le Sphinx</label>
+                            </div>
+                            <div class="reponse">
+                                <input type="checkbox" name="homme-mystere" id="saphir">
+                                <label for="sphinx">Saphir</label>
+                            </div>
+                            <div class="reponse">
+                                <input type="checkbox" name="homme-mystere" id="joker">
+                                <label for="sphinx">Le Joker</label>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                
+            </section>
+          <button id="btn-quiz">démarrer le quiz</button>
         </article>
 
 
@@ -95,5 +118,10 @@
         </a>
     </div>
 </footer>
+
+
+<script src="../js/Question.js"></script>
+<script src="../js/Questionnaire.js"></script>
+<script src="../js/quiz.js"></script>
 </body>
 </html>

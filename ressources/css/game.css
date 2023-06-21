@@ -3,12 +3,89 @@ header#header{
     background-image: url("../image/illustrations/Batgame_1.png");
 }
 
-
-
-
-/* article.welcome-banner section#fleche-down{
+article.welcome-banner{
+    position: relative;
+    display: block;
+}
+article.welcome-banner h1{
+    font-size: 50px;
     position: absolute;
-    bottom: 0;
+    top: 20%;
+    left: 5%;
+}
+
+article.welcome-banner section#fleche-down{
+    height: 50px;
+    position: absolute;
+    bottom: 20%;
     left: 50%;
-    transform: translate(-50%,-50%);
-} */
+    transform: translate(-50%,0);
+}
+article.welcome-banner section#fleche-down img{
+    height: 100%;
+}
+
+article#batman-game{
+    margin: 0% 8%;
+    padding:50px 100px 180px 100px;
+    border-left: 3.5px #c8c6ca30 solid ;
+    border-right: 3.5px #c8c6ca30 solid ;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+article#batman-game section#enigmes{
+    min-width: 700px;
+   
+}
+article#batman-game section#enigmes div.enigme{
+    width: 100%;
+    display: flex;
+    gap: 50px;
+    justify-content: space-around;
+    align-items: flex-start;
+    /* align-items: center; */
+}
+article.question-reponse {
+    min-width: 70%;
+}
+article.question-reponse h3{
+    line-height: 50px;
+    font-weight: lighter;
+}
+article.question-reponse div.reponses{
+    display: flex;
+    flex-direction: column;
+    gap:10px; 
+}
+article.question-reponse div.reponses div.reponse{
+    padding:2px 2px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #ffffff82;
+}
+article.question-reponse div.reponses div.reponse input{
+    width: 20px;
+    height: 20px;
+}
+article#batman-game button#btn-quiz{
+    width:400px;
+    height:60px;
+    color: white;
+    font-size: 20px;
+    text-transform: uppercase;
+    background-image: linear-gradient(to right,#3e3c3c,50%,#9f5f31);
+    background-size: 150%;
+    background-position: 40% 40%;
+    cursor: pointer;
+    border: none;
+    transition: all 0.5s ease-in;
+}
+
+article#batman-game button#btn-quiz:hover{
+    background-position: 100% 100%;
+}

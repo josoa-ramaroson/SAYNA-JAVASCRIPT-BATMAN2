@@ -10,11 +10,12 @@
     gap:24px;
     z-index:100;
 }
-#sticky-section a:hover img{
+#sticky-section  img:hover{
    filter: brightness(0) saturate(100%) invert(88%) sepia(100%) saturate(1300%) hue-rotate(357deg);
 }
-#sticky-section a img{
+#sticky-section  img{
     height:50px;
+    cursor: pointer;
 }
 #sticky-section a img.social-sticky{
     height:25px;
