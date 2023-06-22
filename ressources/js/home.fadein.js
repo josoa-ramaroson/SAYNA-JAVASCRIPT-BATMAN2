@@ -4,10 +4,10 @@ function fadeInEnter(entries,observer){
     entries.forEach((entry)=>{
 
         if(entry.isIntersecting){
-            // setTimeout(() => {
-            //     entry.target.classList.remove("before-seen");
-            // }, 100);
-            entry.target.classList.remove("before-seen");
+            setTimeout(() => {
+                entry.target.classList.remove("before-seen");
+            }, 1000);
+            // entry.target.classList.remove("before-seen");
         }
         
     });
