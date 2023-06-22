@@ -59,6 +59,9 @@ article#batman-game section#quizs div.quiz{
 article.question-response {
     min-width: 70%;
 }
+article.question-response  *{
+    transition: all 1s ease-in-out;
+}
 article.question-response h3{
     line-height: 50px;
     font-weight: lighter;
@@ -80,6 +83,10 @@ article.question-response div.responses div.response{
 article.question-response div.responses div.response input{
     width: 20px;
     height: 20px;
+    cursor: pointer;
+}
+article.question-response div.responses div.response label{
+    cursor: pointer;
 }
 article#batman-game button#btn-quiz,button#btn-redo-quiz{
     width:400px;
@@ -111,6 +118,12 @@ section#popup-response{
    align-items: center;
    position: absolute;
    transform: scale(0);
+   opacity: 0;
+   transition: all 1s ease-in;
+}
+section#popup-response.visible{
+    transform: scale(1);
+    opacity: 1;
 }
 section#popup-response h3{
     font-size: 40px;

@@ -30,7 +30,7 @@ class Question{
             // the responses on the checkbox and label
             let text = element["text"];
             input.setAttribute("id", text);
-            label.setAttribute("for", text);
+            // label.setAttribute("for", text);
             label.innerHTML = text; 
             
             // add from the most inside element
@@ -38,10 +38,10 @@ class Question{
             response.appendChild(label);
 
             responses.appendChild(response);
-
-            response.onclick = ()=>{
-                response.firstChild.click();
-            }
+            // to prevent the double click
+            input.onclick = (e)=> response.click();
+            response.onclick = ()=> response.firstChild.click();
+            
         });
 
 
@@ -55,6 +55,7 @@ class Question{
     }
     checkAnswer(answer){
         let isGood = this.response.map(item=>item["isGood"]);
+       // console.log("answer",answer,"isGood",isGood);
         for(let i=0;i<isGood.length;i++){
             if(answer[i] !== isGood[i])
                 return 0;
