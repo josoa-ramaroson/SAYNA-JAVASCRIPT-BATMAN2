@@ -37,6 +37,17 @@ class Questionnaire{
             this.container.innerHTML = "";
             this.titre.innerHTML = `${this.currentQuestion+1}/${this.questions.length}`;
             this.container.appendChild(questionObject.toHtml());
+            if(this.currentQuestion == 6){
+                document.querySelectorAll(".image-clandestin-9").forEach((element)=>{
+                    element.classList.add("active");
+                });
+            }
+            else{
+                document.querySelectorAll(".image-clandestin-9").forEach((element)=>{
+                    if(element.classList.contains("active")
+)                    element.classList.remove("active");
+                });
+            }
             this.currentQuestion++;   
 
         }

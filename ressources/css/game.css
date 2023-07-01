@@ -41,6 +41,7 @@ article#batman-game{
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    position: relative;
 }
 article#batman-game section#quizs{
     display: flex;
@@ -136,4 +137,19 @@ section#popup-response p{
     font-size: 24px;
     line-height: 34px;
     text-align: center;
+}
+
+.image-clandestin-9{
+    position: absolute;
+    bottom: 0;
+    opacity: 0;
+}
+.image-clandestin-9.premier{
+    right: 150px;
+}
+.image-clandestin-9.deuxieme{
+    left: 150px;
+}
+.image-clandestin-9.active{
+    opacity: 1;
 }
