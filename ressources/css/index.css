@@ -629,6 +629,7 @@ article#citation-slider img#guillemet-2{
 
 footer{
        margin: 0 4%;
+       transition: all 1s ease-in-out;
 }
 footer p{
     font-size: 8px;

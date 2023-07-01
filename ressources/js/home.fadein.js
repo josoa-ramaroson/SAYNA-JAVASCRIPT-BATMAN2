@@ -4,10 +4,10 @@ function fadeInEnter(entries,observer){
     entries.forEach((entry)=>{
 
         if(entry.isIntersecting){
-            setTimeout(() => {
-                entry.target.classList.remove("before-seen");
-            }, 1000);
-            // entry.target.classList.remove("before-seen");
+            // setTimeout(() => {
+            //     entry.target.classList.remove("before-seen");
+            // }, 1000);
+             entry.target.classList.remove("before-seen");
         }
         
     });
@@ -41,7 +41,8 @@ let selectorElementFadedIn = [
 let elementFadedIn = document.querySelectorAll(selectorElementFadedIn.join(","));
 
 elementFadedIn.forEach((element)=>{
-    element.classList.add("before-seen");
+    if(!element.classList.contains("before-seen"))
+        element.classList.add("before-seen");
    // element.style = "transition: all 2s ease-in-out;";
     observer.observe(element);
 })

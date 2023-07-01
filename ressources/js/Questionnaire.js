@@ -13,6 +13,7 @@ class Questionnaire{
         this.currentQuestion = 0;    
         this.bouton.onclick = ()=>{
             
+            this.bouton.innerHTML = "Question suivante";
             if(this.currentQuestion >= this.questions.length){
                 this.finish();  
                 return;
